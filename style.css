@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F5F7FA; /* soft modern background */
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 55px;
+}
+
+.note {
+  width: 400px;
+  height: 400px;
+  background-color: #FFFFFF;
+  margin: 15px;
+  margin-top: 55px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tool {
+  width: 100%;
+  background-color: #4B6CB7; /* modern blue */
+  color: white;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.tool i {
+  padding: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tool i:hover {
+  color: #D1D8EC; /* soft hover color */
+}
+
+.note textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  padding: 12px;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2F2F2F;
+  background-color: #FFFFFF;
+}
+
+.note textarea:focus {
+  outline: none;
+}
+
+#addBtn {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  background-color: #4B6CB7;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+#addBtn:hover {
+  background-color: #395591;
+}
